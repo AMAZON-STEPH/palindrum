@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>paldrum</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form{
+       display: flex;
+       flex-direction: column;
+       gap: 1em;
+       align-items: center;
+       justify-content: center;
+       border: 3px solid blueviolet;
+       padding:0 20px;
+       height: 60vh;
+       width: 60%;
+    }
+    button{
+      padding:10px 1em;
+      background-color: blueviolet;
+      border: none;
+      color: beige;
+      font: 600;
+      font-family: cursive;
+      font-size: 20px;
+      border-radius: 1em 10px;
+      transition: transform 1s ease;
+    }
+    button:hover{
+      background-color: white;
+      border: 2px solid blueviolet;
+      color: blueviolet;
+    }
+     button:active{
+      transform:scale(0.7)
+     }
+    input{
+      padding: 10px 1em;
+      outline:2px solid blueviolet;
+      border: none;
+      /* color: white; */
+      font-family: cursive;
+      border-radius: 5px;
+    }
+
+    p{
+      font-family: lucida sans;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    h3{
+      font-family: arial;
+      position: relative;
+      padding: 10px 1em;
+      border-radius: 2em 1em 5em 5em;
+      animation:change 5s ease 5 ;
+      background-color: khaki;
+    }
+
+    span > i{
+      font-size:2em;
+      display:inline-block ;
+      animation:rotate 1s ease-in-out infinite ;
+    }
+
+    @keyframes rotate {
+      0% {transform: rotate(-20deg);}
+      50% {transform: rotate(20deg);}
+      100% {transform: rotate(-20deg);}
+    }
+    @keyframes scale {
+      0% {transform: rotate(-20deg);}
+      50% {transform: rotate(20deg);}
+      100% {transform: rotate(-20deg);}
+    }
+    @keyframes change {
+       0%{background-color: blueviolet; left: 2em;}
+        20%{background-color:plum; left: 3em;}
+        50%{background-color: palevioletred; left:5em}
+        60%{background-color:purple; color: white; left:10em ;}
+        80%{background-color: violet; left:2em}
+        90%{background-color:powderblue; left:1em;}
+    }
+  </style>
+</head>
+<body>
+<script src="plidrum.js"></script>
+</body>
+</html>
